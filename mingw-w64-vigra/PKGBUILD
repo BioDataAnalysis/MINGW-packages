@@ -23,6 +23,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-gcc-libs"
 makedepends=("${MINGW_PACKAGE_PREFIX}-gcc"
              "${MINGW_PACKAGE_PREFIX}-cmake"
              "${MINGW_PACKAGE_PREFIX}-python2-nose"
+             "${MINGW_PACKAGE_PREFIX}-python2-numpy"
              "${MINGW_PACKAGE_PREFIX}-python2-sphinx")
 options=('staticlibs' 'strip')
 source=(${_realname}-${pkgver}.tar.gz::https://github.com/ukoethe/vigra/releases/download/Version-${_pkgver}/${_realname}-${pkgver}-src.tar.gz
