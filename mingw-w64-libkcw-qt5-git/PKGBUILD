@@ -5,6 +5,7 @@ _variant=-static
 source "$(dirname ${BASH_SOURCE[0]})"/../mingw-w64-PKGBUILD-common/kde-frameworks5
 _kde_f5_init_package "${_variant}" "libkcw"
 _ver_base=0.1.0
+pkgbase=mingw-w64-libkcw-qt5-git
 pkgver=0.1.0.70.810b71c
 pkgrel=1
 arch=('any')
@@ -15,7 +16,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-extra-cmake-modules" "git")
 depends=()
 _kde_f5_add_depends "${_variant}" "${MINGW_PACKAGE_PREFIX}-qt5${_namesuff}" "${MINGW_PACKAGE_PREFIX}-bzip2"
 groups=('kf5')
-source=("${_realname}"::"git://anongit.kde.org/${_basename}.git")
+source=("${_realname}"::"git+https://anongit.kde.org/${_basename}.git")
 sha256sums=('SKIP')
 
 pkgver() {
